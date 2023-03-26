@@ -1,0 +1,180 @@
+body{   
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #444;
+    background: #eee;
+  }
+
+h1{
+    margin: 30px auto;
+    padding: 20px;
+    color: darkolivegreen;
+    background-color: #b1d1d3;
+    text-align: center;
+    width: 87%;
+}
+
+
+h2{
+    color: darkolivegreen;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    text-align: center;
+}
+.newMovieContainer{
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    position: relative;
+}
+
+form{
+    float: right;
+}
+
+label{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+#movies {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    width: 160px;
+    height: 35px;
+    margin: 10px;
+    background-color: rgb(227, 227, 227);
+    border: 2px solid rgb(147, 150, 108);  
+  }
+  
+  
+ #select-selected {
+    background-color: DodgerBlue;
+ }
+
+ .open-button {
+    float: left;
+    background-color: #555;
+    color: white;
+    padding: 14px;
+    margin: 5px;
+    border: 1.5px solid blue;
+    border-radius: .6em;
+    cursor: pointer;
+    width: 160px;
+    font-size: 14.5px;
+  }
+
+  .open-button:hover {
+    background-color: #3e8e41}
+
+
+  /* The popup form - hidden by default */
+.addMovie-popup {
+    display: none;
+    position: fixed;
+    left: 36%;
+    top: 5%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .form-container label{
+    display: inline-block;
+    width: 25%;
+    padding: 8px 0;
+    text-align: left;
+    margin: 5px 0 10px 0;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=number] {
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container textarea{
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size: 16px;
+    resize: none;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    width: 40%;
+    margin: 10px 14px;
+    padding: 14px;
+    display: inline-block;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+th{
+    padding: 14px;
+    background-color: #3e6164;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    color: rgb(228, 244, 0);
+    border: 1px solid rgb(147, 150, 108);  
+}
+
+td {
+    background-color: #b1d1d3;
+    padding: 14px 10px;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid rgb(147, 150, 108);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Data</title>
+</head>
+<body>
+    <h1>Movie Data</h1>
+    <br>
+    <div class="newMovieContainer">
+        <form action="">
+          <label for="movies">Sort by:</label>
+          <select name="movies" id="movies" onchange="sortTable()">
+            <option value="title" selected>Title</option>
+            <option value="year">Year</option>
+            <option value="rating">Rating</option>  
+          </select>
+        </form>
+
+        <button class="open-button" onclick="addMovie()">Add movie</button>
+
+        <div class="addMovie-popup" id="addMovieForm">
+          <form action="" class="form-container">
+            <h2>Add New Movie</h2>
+
+            <label for="mTitle">Title</label>
+            <input type="text" placeholder="Enter Title"  id="mTitle" name="mTitle" required/><br>
+
+            <label for="myear">Year</label>
+            <input type="number" id="mYear" min="1900" max="2099" step="1" value="2023" /><br>
+
+            <label for="mRuntime">Runtime</label>
+            <input type="number" id="mRuntime" step="1" value="000" /><br>
+
+            <label for="mRating">Rating</label>
+            <input type="number" id="mRating" min="0" max="10" step=".1" value="0" /><br>
+
+            <label for="mCast">Cast	</label>
+            <textarea id="mCast" name="mCast" rows="2" cols="10"></textarea>
+
+            <label for="mPlot">Plot</label>
+            <textarea id="mPlot" name="mPlot" rows="4" cols="50"></textarea>
+
+            <button type="button" class="btn" onclick="addNewMovie()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+    <table id="moviesTable">
+        <tr>
+          <th>Movie title</th>
+          <th>Year</th>
+          <th>Runtime</th>
+          <th>Rating</th>
+          <th>Cast</th>
+          <th>Plot</th>       
+        </tr>
+      </table>
+    <script src="index.js"></script>
+</body>
+</html>
